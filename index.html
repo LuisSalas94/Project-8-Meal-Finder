@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Meal Finder FETCH API</title>
+	</head>
+	<body>
+		<!-- Preloader  -->
+		<div class="preloader">
+			<img src="img/729.gif" alt="" />
+		</div>
+		<!-- container -->
+		<div class="container">
+			<h1>Meal Finder</h1>
+			<!-- flex -->
+			<div class="flex">
+				<form class="flex" id="submit">
+					<input
+						type="text"
+						id="search"
+						placeholder="Search for meals or keywords"
+					/>
+					<button class="search-btn" type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+				<button class="random-btn" id="random">
+					<i class="fas fa-random"></i>
+				</button>
+			</div>
+			<!-- text to show -->
+			<div id="result-heading"></div>
+			<!-- show all meals found -->
+			<div id="meals" class="meals"></div>
+			<!-- show individual meal -->
+			<div id="single-meal"></div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
